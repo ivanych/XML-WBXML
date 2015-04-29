@@ -1,5 +1,9 @@
 Revision history for Perl extension XML::WBXML.
 
+0.04  2015-04-29
+    - Fork XML-WBXML-0.03
+    - Fixed bug https://rt.cpan.org/Public/Bug/Display.html?id=39702 (t/01-basic.t fails)
+
 0.03  Thu Jul 27 13:41:09 EDT 2006
         - Allow it to work on Perl 5.6, as reported
           to work by aaron@freebsd.org
