@@ -7,7 +7,7 @@
 #include <wbxml.h>
 
 
-MODULE = XML::WBXML		PACKAGE = XML::WBXML		
+MODULE = XML::WB		PACKAGE = XML::WB		
 
 PROTOTYPES: disable
 

@@ -1,4 +1,4 @@
-package XML::WBXML;
+package XML::WB;
 
 use 5.00600;
 use strict;
@@ -15,7 +15,7 @@ our @EXPORT = ();
 our $VERSION = '0.04';
 
 require XSLoader;
-XSLoader::load('XML::WBXML', $VERSION);
+XSLoader::load('XML::WB', $VERSION);
 
 # Preloaded methods go here.
 
@@ -24,14 +24,14 @@ __END__
 
 =head1 NAME
 
-XML::WBXML - Convert between XML and WBXML using libwbxml2
+XML::WB - Convert between XML and WBXML using libwbxml2
 
 =head1 SYNOPSIS
 
-  use XML::WBXML;
+  use XML::WB;
 
-  $wbxml = XML::WBXML::xml_to_wbxml($xml);
-  $xml = XML::WBXML::wbxml_to_xml($wbxml);
+  $wbxml = XML::WB::xml_to_wbxml($xml);
+  $xml = XML::WB::wbxml_to_xml($wbxml);
 
 =head1 DESCRIPTION
 

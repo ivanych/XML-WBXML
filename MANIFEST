@@ -1,5 +1,5 @@
 Changes
-lib/XML/WBXML.pm
+lib/XML/WB.pm
 Makefile.PL
 MANIFEST
 ppport.h
@@ -199,5 +199,5 @@ t/samples/wv-103.xml
 t/samples/wv-104.xml
 t/samples/wv-105.xml
 typemap
-WBXML.xs
+WB.xs
 META.yml                                 Module meta-data (added by MakeMaker)

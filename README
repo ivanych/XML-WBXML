@@ -1,4 +1,4 @@
-XML-WBXML
+XML-WB
 =========
 
 This is a wrapper around libwbxml2, which must be installed first.
