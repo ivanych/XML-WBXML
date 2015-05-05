@@ -8,7 +8,7 @@ WriteMakefile(
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     ABSTRACT_FROM  => 'lib/XML/WBXML.pm', # retrieve abstract from module
     AUTHOR         => 'David Glasser <glasser@bestpractical.com>',
-    LIBS              => ['-lwbxml2'], # e.g., '-lm'
+    LIBS              => ['-libwbxml2'], # e.g., '-lm'
     DEFINE            => '', # e.g., '-DHAVE_SOMETHING'
     INC               => '-I.', # e.g., '-I. -I/usr/include/other'
 	# Un-comment this if you add C files to link with later:
