@@ -1,0 +1,4 @@
+language: perl
+
+notifications:
+    email: false
