@@ -1,5 +1,8 @@
 Revision history for Perl extension XML::WB.
 
+0.05  2015-05-05
+    - Module renamed from XML::WBXML in XML::WB
+
 0.04  2015-04-29
     - Fork XML-WBXML-0.03
     - Fixed bug https://rt.cpan.org/Public/Bug/Display.html?id=39702 (t/01-basic.t fails)
