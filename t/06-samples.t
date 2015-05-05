@@ -11,7 +11,7 @@ BEGIN {
     plan tests => 2+ 3*(scalar @samples);
     Test::XML->import;
 
-    use_ok 'XML::WBXML';
+    use_ok 'XML::WB';
     use_ok 'XML::SemanticDiff::BasicHandler';
     {
 	no warnings 'redefine';
@@ -50,9 +50,9 @@ for my $sample_file (@samples) {
 	$todo = "$sample_file: known that doesn't convert to wbxml" if $wv_strtable_broken{$sample_file};
 	$TODO = $todo if $todo;
 
-	my $wbxml = XML::WBXML::xml_to_wbxml($xml);
+	my $wbxml = XML::WB::xml_to_wbxml($xml);
 	ok(defined $wbxml, "$sample_file converted successfully to wbxml");
-	my $xml_roundtrip = XML::WBXML::wbxml_to_xml($wbxml || '');
+	my $xml_roundtrip = XML::WB::wbxml_to_xml($wbxml || '');
 	# The && here makes it fail if $wbxml was undefined, but lets
 	# $xml_roundtrip be defined so that the is_xml later doesn't crash.
 	ok(defined $wbxml && defined $xml_roundtrip, "$sample_file converted successfully back to xml");

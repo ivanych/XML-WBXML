@@ -3,10 +3,10 @@ use ExtUtils::MakeMaker;
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 WriteMakefile(
-    NAME              => 'XML::WBXML',
-    VERSION_FROM      => 'lib/XML/WBXML.pm', # finds $VERSION
+    NAME              => 'XML::WB',
+    VERSION_FROM      => 'lib/XML/WB.pm', # finds $VERSION
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
-    ABSTRACT_FROM  => 'lib/XML/WBXML.pm', # retrieve abstract from module
+    ABSTRACT_FROM  => 'lib/XML/WB.pm', # retrieve abstract from module
     AUTHOR         => 'David Glasser <glasser@bestpractical.com>',
     LIBS              => ['-lwbxml2'], # e.g., '-lm'
     DEFINE            => '', # e.g., '-DHAVE_SOMETHING'
