@@ -1,5 +1,8 @@
 Revision history for Perl extension XML::WB.
 
+0.06  2015-05-05
+    - Added meta-info (repository)
+
 0.05  2015-05-05
     - Module renamed from XML::WBXML in XML::WB
 
