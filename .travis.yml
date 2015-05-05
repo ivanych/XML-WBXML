@@ -1,4 +1,7 @@
 language: perl
 
+before_install:
+    - sudo apt-get install libwbxml2-dev
+
 notifications:
     email: false
