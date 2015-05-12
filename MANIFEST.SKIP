@@ -1,0 +1,13 @@
+^\.
+
+^blib/
+^Makefile$
+^Makefile\.old
+^MANIFEST\.bak
+^MANIFEST\.SKIP
+^MYMETA\.
+^pm_to_blib
+
+^WB\.bs
+^WB\.c
+^WB\.o

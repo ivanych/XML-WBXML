@@ -1,7 +1,7 @@
 Changes
 lib/XML/WB.pm
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
 ppport.h
 README
 t/00-load.t
@@ -200,4 +200,3 @@ t/samples/wv-104.xml
 t/samples/wv-105.xml
 typemap
 WB.xs
-META.yml                                 Module meta-data (added by MakeMaker)
