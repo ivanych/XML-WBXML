@@ -1,5 +1,9 @@
 Revision history for Perl extension XML::WB.
 
+0.07 2015-05-13
+    - File MANIFEST was fixed
+    - Information about the authors and the history module has been updated
+    
 0.06  2015-05-05
     - Added meta-info (repository)
 
