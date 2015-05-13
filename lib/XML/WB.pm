@@ -65,18 +65,19 @@ Returns undef on errors.
 
 L<libwbxml2>, a C compiler, and (transitively) L<expat>.
 
-=head1 SEE ALSO
+=head1 HISTORY
 
-Francois Perrad wrote two pure-Perl modules for dealing with WBXML: L<WAP::SAXDriver::wbxml>
-for parsing WBXML using a SAX approach and L<WAP::wbxml> for writing it.  While they have their
-advantages, I did not find that their output was as nice as libwbxml2's, and they don't provide
-a simple conversion interface.
+Initially this module was written by David Glasser and was named XML::WBXML.
 
-I also wrote L<XML::WBXML::SyncML> which wrapped Perrad's modules to provide a simple conversion
-interface (which was limited only to SyncML documents); however, I would highly recommend L<XML::WBXML>
-over it, since it is both more correct and more general.  (In fact, I withdrew L<XML::WBXML::SyncML>
-from the CPAN within 24 hours of uploading it (since I may want to use the name for a subclass of this
-module someday) -- if you really think you'll find it useful you'll need to download it from the BACKPAN.)
+Unfortunately, David stopped renewing the module in 2006. Currently (2015) the module
+can't be successfully compiled since library libwbxml2 gives results not provided
+by module tests set. In the module's bugtracker there is an appropriate report:
+https://rt.cpan.org/Public/Bug/Display.html?id=39702
+
+To fix this error I forked module XML::WBXML with the name XML::WB.
+
+Besides, I posted module XML::WB in repository on github.com to simplify its further development:
+https://github.com/ivanych/xml-wb
 
 =head1 INCOMPATIBILITIES
 
@@ -85,24 +86,30 @@ None reported.
 
 =head1 BUGS AND LIMITATIONS
 
-No bugs have been reported.
+See F<https://github.com/ivanych/xml-wb/issues> to report and view bugs.
 
-Please report any bugs or feature requests to
-C<bug-xml-wbxml@rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org>.
-
+You can also look at the bugs in bugtracker of the initial module XML::WBXML.
 
 =head1 AUTHOR
 
+=over 4
+ 
+=item *
+
 David Glasser C<< <glasser@bestpractical.com> >>
 
+=item *
+
+Mikhail Ivanov C<< <m.ivanych@gmail.com> >>
+
+=back
 
 =head1 LICENCE AND COPYRIGHT
 
 Copyright (c) 2005, Best Practical Solutions, LLC.  All rights reserved.
 
 This module is free software; you can redistribute it and/or
-modify it under the same terms as Perl itself. See L<perlartistic>.
+modify it under the same terms as Perl itself.
 
 
 =head1 DISCLAIMER OF WARRANTY
