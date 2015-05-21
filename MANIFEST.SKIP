@@ -8,6 +8,6 @@
 ^MYMETA\.
 ^pm_to_blib
 
-^WB\.bs
-^WB\.c
-^WB\.o
+^WBXML\.bs
+^WBXML\.c
+^WBXML\.o

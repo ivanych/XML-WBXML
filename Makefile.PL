@@ -4,10 +4,10 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME          => 'XML::WB',
+    NAME          => 'XML::WBXML',
     AUTHOR        => [ 'David Glasser <glasser@bestpractical.com>', 'Mikhail Ivanov <m.ivanych@gmail.com>', ],
-    VERSION_FROM  => 'lib/XML/WB.pm',                                                                            # finds $VERSION
-    ABSTRACT_FROM => 'lib/XML/WB.pm',                                                                            # retrieve abstract from module
+    VERSION_FROM  => 'lib/XML/WBXML.pm',                                                                            # finds $VERSION
+    ABSTRACT_FROM => 'lib/XML/WBXML.pm',                                                                            # retrieve abstract from module
     LICENSE       => 'perl_5',
     PREREQ_PM     => {},                                                                                         # e.g., Module::Name => 1.1
     LIBS          => ['-lwbxml2'],                                                                               # e.g., '-lm'
@@ -21,12 +21,12 @@ WriteMakefile(
         resources   => {
             license     => [ 'http://dev.perl.org/licenses/' ],
             bugtracker  => {
-                web    => 'https://github.com/ivanych/xml-wb/issues',
+                web    => 'https://github.com/ivanych/XML-WBXML/issues',
             },
             repository => {
                 type => 'git',
-                url  => 'https://github.com/ivanych/xml-wb.git',
-                web  => 'https://github.com/ivanych/xml-wb',
+                url  => 'https://github.com/ivanych/XML-WBXML.git',
+                web  => 'https://github.com/ivanych/XML-WBXML',
             },
         },
     },

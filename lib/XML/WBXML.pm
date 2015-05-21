@@ -1,4 +1,4 @@
-package XML::WB;
+package XML::WBXML;
 
 use 5.00600;
 use strict;
@@ -12,10 +12,10 @@ our @EXPORT_OK = qw( xml_to_wbxml wbxml_to_xml );
 
 our @EXPORT = ();
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 require XSLoader;
-XSLoader::load('XML::WB', $VERSION);
+XSLoader::load('XML::WBXML', $VERSION);
 
 # Preloaded methods go here.
 
@@ -24,14 +24,14 @@ __END__
 
 =head1 NAME
 
-XML::WB - Convert between XML and WBXML using libwbxml2
+XML::WBXML - Convert between XML and WBXML using libwbxml2
 
 =head1 SYNOPSIS
 
-  use XML::WB;
+  use XML::WBXML;
 
-  $wbxml = XML::WB::xml_to_wbxml($xml);
-  $xml = XML::WB::wbxml_to_xml($wbxml);
+  $wbxml = XML::WBXML::xml_to_wbxml($xml);
+  $xml = XML::WBXML::wbxml_to_xml($wbxml);
 
 =head1 DESCRIPTION
 
@@ -65,20 +65,6 @@ Returns undef on errors.
 
 L<libwbxml2>, a C compiler, and (transitively) L<expat>.
 
-=head1 HISTORY
-
-Initially this module was written by David Glasser and was named XML::WBXML.
-
-Unfortunately, David stopped renewing the module in 2006. Currently (2015) the module
-can't be successfully compiled since library libwbxml2 gives results not provided
-by module tests set. In the module's bugtracker there is an appropriate report:
-https://rt.cpan.org/Public/Bug/Display.html?id=39702
-
-To fix this error I forked module XML::WBXML with the name XML::WB.
-
-Besides, I posted module XML::WB in repository on github.com to simplify its further development:
-https://github.com/ivanych/xml-wb
-
 =head1 INCOMPATIBILITIES
 
 None reported.
@@ -86,9 +72,9 @@ None reported.
 
 =head1 BUGS AND LIMITATIONS
 
-See F<https://github.com/ivanych/xml-wb/issues> to report and view bugs.
+See F<https://github.com/ivanych/XML-WBXML/issues> to report and view bugs.
 
-You can also look at the bugs in bugtracker of the initial module XML::WBXML.
+You can also look at the bugs in old bugtracker: F<https://rt.cpan.org/Public/Dist/Display.html?Name=XML-WBXML>.
 
 =head1 AUTHOR
 

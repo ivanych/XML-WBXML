@@ -3,10 +3,10 @@ use warnings;
 use Test::More tests => 4;
 
 
-use XML::WB qw(wbxml_to_xml);
+use XML::WBXML qw(wbxml_to_xml);
 
-ok(defined &XML::WB::xml_to_wbxml, "found x2w in package");
-ok(defined &XML::WB::wbxml_to_xml, "found w2x in package");
+ok(defined &XML::WBXML::xml_to_wbxml, "found x2w in package");
+ok(defined &XML::WBXML::wbxml_to_xml, "found w2x in package");
 
 ok( (not defined &xml_to_wbxml), "x2w not exported" );
 ok( (defined &wbxml_to_xml), "w2x exported" );
