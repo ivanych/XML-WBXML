@@ -1,4 +1,7 @@
-Revision history for Perl extension XML::WB.
+Revision history for Perl extension XML::WBXML.
+
+0.08 2015-05-21
+    - The module got back the name XML::WBXML
 
 0.07 2015-05-13
     - File MANIFEST was fixed
