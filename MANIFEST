@@ -1,5 +1,5 @@
 Changes
-lib/XML/WB.pm
+lib/XML/WBXML.pm
 Makefile.PL
 MANIFEST			This list of files
 ppport.h
@@ -199,4 +199,4 @@ t/samples/wv-103.xml
 t/samples/wv-104.xml
 t/samples/wv-105.xml
 typemap
-WB.xs
+WBXML.xs
