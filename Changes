@@ -1,5 +1,8 @@
 Revision history for Perl extension XML::WBXML.
 
+0.09 2015-05-22
+    - Changed my email
+
 0.08 2015-05-21
     - The module got back the name XML::WBXML
 
